@@ -1,0 +1,100 @@
+/* Messages */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.message-title {
+  padding: 16px 20px 4px;
+  border-bottom: 1px solid rgb(38, 38, 38, .2);
+}
+.messages-box {
+  flex: 1;
+  padding: 16px 20px;
+  overflow-y: auto;
+}
+.messages-box::-webkit-scrollbar {
+  width: 12px;
+}
+.messages-box::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.messages-box::-webkit-scrollbar-thumb {
+  background-color: rgb(38, 38, 38, .2);
+  border-radius: 6px;
+}
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.message {
+  max-width: 70%;
+  padding: 8px 12px;
+  background-color: #eee;
+  border-radius: 17px;
+}
+.itsme .message {
+  color: #fff;
+  background-color: #0099FF;
+}
+.message-image {
+  cursor: pointer;
+  display: block;
+  max-width: 200px;
+  margin-top: 12px;
+  border-radius: 17px;
+}
+.itsme .message-image,
+.itsme .message {
+  align-self: flex-end;
+}
+.form {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+}
+.message-input {
+  width: 100%;
+  padding: 12px;
+  background-color: #eee;
+  border-radius: 100px;
+  font-size: 16px;
+}
+.btn-submit {
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: .3s;
+}
+.btn-submit.active i {
+  color: #0099FF;
+}
+.file-input {
+  display: none;
+}
+.file-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.btn-submit i ,
+.file-icon i {
+  color: #333;
+  transition: .3s;
+}
+.file-input.active + .file-icon i {
+  color: #0099FF;
+}
+@media (max-width: 576px) {
+  .messages {
+    width: 100%;
+  }
+  .btn-submit {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,13 @@
+/*  Main */
+
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 200px auto;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .main {
+    display: flex;
+  }
+}

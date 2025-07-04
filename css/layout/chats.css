@@ -1,0 +1,61 @@
+/* Chats */
+
+.chats {
+  border-right: 1px solid rgb(38, 38, 38, .2);
+}
+.chats-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(38, 38, 38, .2);
+}
+.chats-title {
+  padding: 16px 20px 4px;
+}
+.close-chat {
+  display: none;
+}
+.chats-users {
+  display: flex;
+  flex-direction: column;
+}
+.btn-chat {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  transition: .3s;
+  width: 100%;
+  border-radius: 0;
+}
+.btn-chat.active {
+  font-weight: bold;
+}
+.btn-chat:hover {
+  background-color: rgb(38, 38, 38, .1);
+}
+@media (max-width: 576px) {
+  .chats {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    z-index: 101;
+    transform: translateX(-100%);
+    transition: .3s;
+  }
+  .chats.active {
+    transform: translateX(0);
+  }
+  .chats-title-box {
+    padding: 8px 12px;
+  }
+  .chats-title {
+    padding: 0;
+  }    
+  .close-chat {
+    display: block;
+  }
+}
