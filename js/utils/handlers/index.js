@@ -171,7 +171,6 @@ export function handleNewChat (chatButton) {
 }
 
 export function handleNewMessage (data) {
-  console.log(data)
   if (data.chat !== store.chat._id) return
 
   data.user = {

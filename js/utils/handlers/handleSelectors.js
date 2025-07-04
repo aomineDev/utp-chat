@@ -2,10 +2,7 @@ import store from '../../store.js'
 
 export function selectUser (user) {
   const id = user["_id"]
-  console.log(id)
-  console.log(store.users)
   store.user = store.users.find(user => user._id === id)
-  console.log(store.user)
 }
 
 export function selectChat (chatButton) {
