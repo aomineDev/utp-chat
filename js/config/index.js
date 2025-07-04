@@ -1,7 +1,7 @@
 const config = {
   localUrl: 'http://localhost:3000',
   // baseUrl: 'http://localhost:3000',
-  baseUrl: 'https://chat-api-sigma-six.vercel.app'
+  baseUrl: 'https://utp-chat-api-production.up.railway.app'
 }
 
 export default config
